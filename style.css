@@ -1,0 +1,298 @@
+/* Mengatur gaya untuk seluruh dokumen */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f5f5f5; /* Warna abu-abu terang */
+    overflow-x: hidden; /* Menghindari scroll horizontal */
+}
+
+* {
+    box-sizing: border-box; /* Memastikan padding dan border tidak menambah lebar elemen */
+    margin: 0; /* Menghilangkan margin default dari browser */
+    padding: 0; /* Menghilangkan padding default dari browser */
+}
+
+/* Profile Container */
+.profile-container {
+    display: flex;
+    flex-direction: row; /* Keeps image and description side by side */
+    align-items: center; /* Ensures vertical alignment */
+    gap: 20px; /* Adds space between image and text */
+    margin-top: 150px; /* Adds space from the header */
+    margin-left: auto;  /* Pushes the content to the right */
+    margin-right: 250px; /* Adds a little space from the right edge */
+    max-width: 1200px; /* Optional: sets a max width */
+    flex-wrap: wrap; /* Allows the description to wrap to the next line */
+}
+
+.description-container {
+    max-width: 500px; /* Set a max-width for the description */
+    word-wrap: break-word; /* Ensure words break if needed */
+    white-space: normal; /* Ensures text doesn't stay on one line */
+}
+
+/* Gambar dalam profile */
+.image-container img {
+    width: 250px; /* Menentukan lebar gambar */
+    height: 250px; /* Menentukan tinggi gambar */
+    border-radius: 50%; /* Membuat gambar bulat */
+    object-fit: cover; /* Menjaga gambar tetap proporsional */
+}
+
+/* Deskripsi dalam profile */
+.description-container {
+    flex: 1; /* Membuat bagian penjelasan mengisi ruang yang tersedia */
+}
+
+.description-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.description-container p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Header */
+header {
+    background-color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd; /* Garis bawah untuk header */
+    width: 100%; /* Ensures header spans full width */
+}
+
+/* Left part of the header */
+.header-left {
+    text-align: left;
+}
+
+.header-left h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header-left p {
+    margin: 0;
+    font-size: 14px;
+    color: gray;
+}
+
+/* Right part of the header */
+.header-right a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.header-right a:hover {
+    color: #87BFFF; /* Warna saat hover */
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Resume Section */
+#resume {
+    padding: 20px;
+    max-width: 1200px; /* Maksimum lebar konten */
+    margin: 0 auto; /* Membuat konten berada di tengah */
+}
+
+.resume-container {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.resume-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.resume-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.content-left,
+.content-right {
+    padding: 10px;
+}
+
+.content-left {
+    flex: 1;
+}
+
+.content-right {
+    flex: 2;
+    text-align: justify;
+}
+
+/* Menambahkan jarak pada judul Resume */
+h2 {
+    margin-bottom: 20px; /* Jarak antara judul Resume dan konten */
+}
+
+
+/* Projects Section */
+#projects {
+    padding: 20px;
+    max-width: 1200px; /* Lebar maksimum */
+    margin: 0 auto; /* Tengah */
+}
+
+.project-item {
+    display: flex;
+    align-items: flex-start; /* Membuat konten sejajar di bagian atas */
+    gap: 20px; /* Memberikan jarak antara gambar dan konten */
+    margin-bottom: 20px;
+}
+
+.project-content {
+    flex: 2; /* Memberikan lebih banyak ruang untuk konten dibanding gambar */
+    text-align: justify;
+}
+
+.project-item .project-image {
+    flex: 1.2; /* Membagi ruang untuk gambar */
+    padding: 20px; /* Memberikan ruang di sekitar gambar */
+    background-color: #241c1c; /* Warna latar belakang (abu-abu terang) */
+    border-radius: 10px; /* Membuat sudut box melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+    display: flex; /* Agar gambar tetap center */
+    justify-content: center; /* Memusatkan gambar horizontal */
+    align-items: center; /* Memusatkan gambar vertikal */
+}
+
+
+.project-item .project-content {
+    flex: 1.7; /* Bagian kanan untuk judul dan deskripsi */
+    padding: 10px;
+}
+
+.project-image img {
+    width: 44%; /* Gambar memenuhi lebar bagian kiri */
+    height: auto;
+    border-radius: 10px; /* Opsi: Tambahkan sedikit lengkungan */
+}
+
+.project-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px; /* Jarak dengan deskripsi */
+    font-weight: bold;
+}
+
+.project-content p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px; /* Jarak antar paragraf */
+}
+
+/* Contact Section */
+#contact {
+    max-width: 1200px; /* Ensures all contact section is centered and wide enough */
+    margin: 0 auto;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+#contact input, #contact textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#contact button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #87BFFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #5a9fd8;
+}
+
+/* Footer */
+footer {
+    background-color: white; /* Latar belakang abu-abu terang */
+    padding: 25px 20px; /* Padding lebih kecil */
+    display: flex;
+    justify-content: space-between; /* Membagi ruang ke kiri, tengah, dan kanan */
+    align-items: center; /* Vertikal rata tengah */
+    border-top: 1px solid #ddd; /* Garis pemisah atas */
+    font-size: 12px; /* Ukuran font lebih kecil */
+    margin-top: auto;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1; /* Setiap bagian mengambil ruang yang sama */
+    text-align: center;
+    margin: 0 10px; /* Jarak antar elemen */
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-center a {
+    margin: 0 10px; /* Jarak antar ikon */
+    color: #000000; /* Warna ikon */
+    font-size: 20px; /* Ukuran ikon */
+    text-decoration: none; /* Hilangkan underline */
+}
+
+.footer-center a:hover {
+    color: #5a9fd8; /* Warna saat hover */
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column; /* Elemen ditumpuk */
+        text-align: center;
+        padding: 15px; /* Tambahkan sedikit padding untuk estetika */
+    }
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        margin-bottom: 10px;
+    }
+}
