@@ -1,53 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Alex — Portfolio</title>
+
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="header-left">
-            <h1>Alexandrio Ariel</h1>
-            <p>Web Developer & Programmer</p>
-        </div>
-        <nav class="header-right">
-            <a href="index.html">Home</a>
-            <a href="resume.html">Resume</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
 
-    <!-- Home Section -->
-    <div class="profile-container">
-        <div class="image-container">
-            <img src="profile.jpg" alt="Foto Profil">
-        </div>
-        <div class="description-container">
-            <h1>Hello!</h1>
-    
-            <p>I'm a student of Informatics Engineer. I enjoy coding, solving problems, and learning new technologies.</p>
-        </div>
+<header>
+  <div class="header-left" aria-label="brand">
+    <h1>MyPortfolio</h1>
+  </div>
+
+  <nav class="header-right" aria-label="main navigation">
+    <a href="#home">Home</a>
+    <a href="#resume">Resume</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HOME -->
+  <section id="home" class="section " aria-labelledby="home-title">
+    <div class="section-card ">
+      <img src="image/pp.png" alt="Alex profile photo" class="profile-pic">
+      <h2 id="home-title">Hello, welcome to my website <span class="accent">Stranger</span></h2>
+      <p class="lead">An enthusiastic web developer & designer focusing on simple yet aesthetic design.</p>
     </div>
-    
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-left">
-            <p>Email: alexandrioaril14@gmail.com</p>
+  <!-- RESUME -->
+  <section id="resume" class="section" aria-labelledby="resume-title">
+    <div class="section-card">
+      <h2 id="resume-title">Resume</h2>
+
+      <article class="resume-entry">
+        <div class="entry-meta">
+          <strong>2024</strong>
+          <span class="muted">— HIMATRO UNILA (Public Relations / Event Coordinator)</span>
         </div>
-        <div class="footer-center">
-            <a href="https://www.instagram.com/speracious/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/alexandrio-rafidan-34b4a61ba/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <p>I was a member of HIMATRO serving in the public relations department and acted as event coordinator for the FORSIMA program, responsible for organizing and overseeing events, applying leadership and communication skills to ensure successful collaboration and execution.</p>
+      </article>
+
+      <article class="resume-entry">
+        <div class="entry-meta">
+          <strong>2024 — Present</strong>
+          <span class="muted">— GRADIEN UNILA (Education Staff)</span>
         </div>
-        <div class="footer-right">
-            <p>&copy; 2024 Alexandrio Ariel. All rights reserved.</p>
+        <p>I am active in UKM GRADIEN UNILA as education staff, contributing to Edutech programs such as programming classes and workshops for members, helping to improve technical skills and foster collaborative learning focused on development and coding.</p>
+      </article>
+
+      <article class="resume-entry">
+        <div class="entry-meta">
+          <strong>2023 — Present</strong>
+          <span class="muted">— Universitas Lampung (Informatics Engineering)</span>
         </div>
-    </footer>
-    
+        <p>I am an Informatics Engineering student that passionate about technology and problem-solving, studying software development, programming, and IT infrastructure to apply knowledge in real-world projects and build innovative solutions.</p>
+      </article>
+
+      <article class="resume-entry">
+        <div class="entry-meta">
+          <strong>2025 — Present</strong>
+          <span class="muted">— Computer Engineering Laboratory Assistant</span>
+        </div>
+        <p>As a laboratory assistant, I support practical sessions, explain programming and hardware concepts, prepare lab materials with lecturers, and contribute to academic projects. Strengthening teaching, teamwork, and technical problem solving skills.</p>
+      </article>
+
+      <div class="resume-skills">
+        <h3>Skills</h3>
+        <div class="skill-group">
+          <div class="skill-chip">C++</div>
+          <div class="skill-chip">PHP</div>
+          <div class="skill-chip">HTML</div>
+          <div class="skill-chip">CSS</div>
+          <div class="skill-chip">Laravel</div>
+          <div class="skill-chip">Figma</div>
+          <div class="skill-chip">Canva</div>
+          <div class="skill-chip">Git</div>
+          <div class="skill-chip">Arduino IDE</div>
+        </div>
+
+        <h4>Soft Skills</h4>
+        <p>Effective communication, teamwork, and time management.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section" aria-labelledby="projects-title">
+    <div class="section-card">
+      <h2 id="projects-title">Projects</h2>
+
+     <div class="project-item">
+  <div class="project-image portrait">
+    <img src="image/SIBBO.jpg" alt="SIBBO project screenshot">
+  </div>
+
+  <div class="project-content">
+    <h3>SIBBO (Online-Based Shopping Information System)</h3>
+    <div class="project-meta">2024 — UI/UX</div>
+    <p>SIBBO is a web-based grocery store management application designed to simplify sales, inventory, and reporting. It supports product CRUD, automatic transaction recording, real-time analytics, and low-stock notifications, helping store owners make data-driven decisions.</p>
+  </div>
+</div>
+
+<div class="project-item">
+  <div class="project-image landscape">
+    <img src="image/e-lib.jpg" alt="Mini E-Library screenshot">
+  </div>
+
+  <div class="project-content">
+    <h3>Mini E-Library</h3>
+    <div class="project-meta">2025 — Backend Developer</div>
+    <p>Mini E-Library is a web application for managing digital book metadata (CRUD, uploads, categories) with admin dashboard statistics. Registered users can search, view details, read/download PDFs, favorite titles, and submit reviews. Built with Laravel (backend) and modern frontend principles.</p>
+  </div>
+</div>
+
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section" aria-labelledby="contact-title">
+    <div class="section-card">
+      <h2 id="contact-title">Contact</h2>
+      <h3>Fill the form below to contact!</h3>
+
+      <form action="mailto:alexandrioaril14@gmail.com" method="post" enctype="text/plain" class="contact-form" aria-label="contact form">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="btn-primary">Send</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-left">
+    <p>alexandrioaril14@gmail.com</p>
+  </div>
+
+  <div class="footer-center" aria-hidden="false">
+    <a href="https://instagram.com/speracious" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/alexandrio-rafidan-34b4a61ba/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/exyluminate" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+  </div>
+
+  <div class="footer-right">
+    <p>© 2025 Alex. All rights reserved.</p>
+  </div>
+</footer>
+
 </body>
 </html>
